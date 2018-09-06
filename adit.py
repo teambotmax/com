@@ -13,13 +13,13 @@ from googletrans import Translator
 import youtube_dl
 
 #aditmadzs = LineClient()
-aditmadzs = LineClient(authToken='ISI TOKEN MU CINTA')
+aditmadzs = LineClient(authToken='EwK8tiL6hKA4onXAkA8c.16TgKHOKEZdzbqSPFT9+pa.GJNM09VqVCGEGYH6RK99/up+ymO/AHCL/E0wJJXaUvM=')
 aditmadzs.log("Auth Token : " + str(aditmadzs.authToken))
 channel = LineChannel(aditmadzs)
 aditmadzs.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 #ki = LineClient()
-ki = LineClient(authToken='ISI TOKEN MU CINTA')
+ki = LineClient(authToken='EweLRROrjjWjK6DQam87.9JEdd8ZTx6V8TnFFP76r5W.2SNlkbk9gm/yOEgs244DQk0v+xZy1q3SVaQpZ/42diY=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
@@ -27,10 +27,10 @@ ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 #ubah mid di dalem admin,owner,creator.json dengan mid kalian
 poll = LinePoll(aditmadzs)
 call = aditmadzs
-creator = ["u874a7502c02896b2edbb3445c2615d35"]
-owner = ["u874a7502c02896b2edbb3445c2615d35"]
-admin = ["u874a7502c02896b2edbb3445c2615d35"]
-staff = ["u874a7502c02896b2edbb3445c2615d35"]
+creator = ["ud7ab46921a247b30d9050b297edf7f3c"]
+owner = ["ud7ab46921a247b30d9050b297edf7f3c"]
+admin = ["ud7ab46921a247b30d9050b297edf7f3c"]
+staff = ["ud7ab46921a247b30d9050b297edf7f3c"]
 mid = aditmadzs.getProfile().mid
 Amid = ki.getProfile().mid
 KAC = [aditmadzs,ki]
