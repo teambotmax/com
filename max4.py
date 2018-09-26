@@ -43,10 +43,10 @@ sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = LineCall(cl)
-creator = ["u4862fe4b182b2fd194a3108e2f3662e8","u6c6a0dba35103c48bdaae35c21750b14"]
-owner = ["u4862fe4b182b2fd194a3108e2f3662e8","u6c6a0dba35103c48bdaae35c21750b14"]
-admin = ["u4862fe4b182b2fd194a3108e2f3662e8","u6c6a0dba35103c48bdaae35c21750b14"]
-staff = ["u4862fe4b182b2fd194a3108e2f3662e8","u6c6a0dba35103c48bdaae35c21750b14"]
+creator = ["ub8fd0c502d6d52c35d8bc6fcced407d0"]
+owner = ["ub8fd0c502d6d52c35d8bc6fcced407d0"]
+admin = ["ub8fd0c502d6d52c35d8bc6fcced407d0"]
+staff = ["ub8fd0c502d6d52c35d8bc6fcced407d0"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -1284,6 +1284,7 @@ def bot(op):
                         elif cmd == "me" or text.lower() == 'me':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
+                               sendMessageWithMention(to, clMID)
                                msg.contentType = 13
                                msg.contentMetadata = {'mid': mid}
                                cl.sendMessage1(msg)
@@ -1344,7 +1345,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                try:
-                                   cl.removeAllMessages(op.param2)
+                                   #cl.removeAllMessages(op.param2)
                                    ki.removeAllMessages(op.param2)
                                    kk.removeAllMessages(op.param2)
                                    kc.removeAllMessages(op.param2)
